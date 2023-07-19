@@ -26,7 +26,7 @@ student.get("/allstudents",
 student.get("/allstudentMaterial",
     async (req, res) => {
         try {
-            const sqlSelect = "SELECT materialstdsem1.*, students.name, students.national_id ,students.student_id ,  material.* FROM materialstdsem1 INNER JOIN students ON materialstdsem1.student_id = students.student_id INNER JOIN material ON materialstdsem1.material_code = material.material_code";
+            const sqlSelect = "SELECT materialstdsem1.*, students.student_name, students.national_id ,students.student_id ,  material.* FROM materialstdsem1 INNER JOIN students ON materialstdsem1.student_id = students.student_id INNER JOIN material ON materialstdsem1.material_code = material.material_code";
             const result = await query(sqlSelect);
             if (result.length > 0) {
                 return res.status(200).json(result);
