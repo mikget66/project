@@ -1,0 +1,67 @@
+.actions{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.actions button{
+    margin-bottom: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #AD8700;
+    width: 100%;
+}
+.actions button:hover{
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 20px #AD8700;
+    cursor: pointer;
+}
+
+.input-container{
+    direction: rtl;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+}.input-container input{
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.actions a{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: black;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+.login .uni-logo{
+ width: 50%;
+ height: 100%;
+}
+.uni-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.login .login-form{
+ width: 50%;
+ background:#fff;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 3rem;
+}
+
+.login-form img{
+    width: 30%;
+}

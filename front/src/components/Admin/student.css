@@ -1,0 +1,34 @@
+.logo img {
+    width:200px;
+    margin: 40px 60px; 
+    position: sticky;
+}
+.g-container{
+    width: 100%;
+    background-color: #fff;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin: 23px 0;
+    background: white;
+    color: black;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+td,
+th,
+tr,
+tr:nth-child(even) {
+    background: #dddddd;
+}
+
+
+
