@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import query from './Database/DBConnection.js';
+import student from './Router/studentCURD.js';
 
 
 
@@ -20,7 +21,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
-
+app.use('/student', student);
 
 
 
